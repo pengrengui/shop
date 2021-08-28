@@ -122,9 +122,6 @@ app.use(function (req, res, next) {
   res.sendResult(null, 404, 'Not Found')
 })
 
-// app.listen(8888)
-app.server = app.listen(port, host, () => {
-  console.log(`server running @ http://${host ? host : 'localhost'}:${port}`)
-})
+app.listen(8888)
 
 module.exports = app
